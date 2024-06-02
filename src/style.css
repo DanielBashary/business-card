@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #23252c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.info {
+    text-align: center;
+}
+
+.info--image{
+    width: 317px;
+    height: auto;
+    display: block;
+    margin-top: 70px;
+    margin: 0 auto;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.info--name{
+    font-family: 'Roboto';
+    color: #f9f7f3;
+    font-size: 1.9em;
+    margin-top: 30px;
+}
+
+.info--job{
+    color: #f5deb3;
+    font-size: 1.0em;
+    font-family: 'Roboto';
+    margin-top: 7px;
+}
+
+.info--buttons{
+    margin-top: 20px; /* Space between the job title and buttons */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.info--linkedin, .info--email{
+    width: 115px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.info--email{
+    background-color: #ffffff;
+}
+
+.info--linkedin{
+    background-color: #0077b5;
+}
+
+.info--linkedin:hover {
+    background-color: #005582;
+}
+
+.info--email:hover {
+    background-color: #e6e6e6;
+}
+
+.info--email .icon, .info--linkedin .icon {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.about--header, .interest--header{
+    font-family: 'Roboto';
+    color: #f9f7f3;
+    font-size: 1.4em;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about--header{
+    padding-right: 180px;
+}
+
+.interest--header{
+    padding-right: 160px;
+}
+
+.about--paragraph, .interest--paragraph {
+    font-family: 'Roboto';
+    color: #f9f7f3;
+    font-size: 0.7em;
+    margin-top: 10px;
+    text-align: left;
+    max-width: 750px;
+    margin-left: calc((100% - 750px) / 2); /* Center within max-width */
+    padding-left: 255px; /* Align with header's padding-right */
+    padding-right: 60px; /* Ensure it ends around the second button */
+}
+
+.interest--paragraph{
+    margin-bottom: 30px;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 1em 2.6em;
+    background-color: #1c1e22; /* Darker color for the footer area */
+    border-radius: 0px 0px 10px 10px;
+}
+
+.footer--icon {
+    font-size: 25px; /* Adjusted icon size */
+    color: #464545; /* Initial icon color */
+    border: none; /* Remove button border */
+    background: none; /* Remove button background */
+    cursor: pointer; /* Change cursor to pointer */
+    margin: 0 18px; /* Add margin to spread out icons */
+}
+
+.footer--icon:hover {
+    filter: brightness(120%);
+}
+
+
+.interest, .about, .info{
+    background-color: #161619;
+    background-color: #161619;
+    width: 100%;
+    max-width: 320px; /* Set the maximum width for the container */
+    border-radius: 14px 14px 0px 0px;
+}
+
+.interest, .about {
+    border-radius: 0px 0px; /* Negative margin to offset top padding */
+}
